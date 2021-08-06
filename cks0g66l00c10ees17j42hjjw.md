@@ -15,7 +15,7 @@ Navigator.push(
 Navigator.pop(context);
 ```
 
-This works great until your app scales and you separate your business logic with the UI logic. And now you have to pass [BuildContext](https://api.flutter.dev/flutter/widgets/BuildContext-class.html) from one function to another function. This becomes a big hassle. 
+This works great until your app scales and you separate your business logic with the UI logic. And now you have to pass [BuildContext](https://api.flutter.dev/flutter/widgets/BuildContext-class.html) from one function to another function. This becomes a big hassle sometimes and there are times when you want to avoid passing on context.
 
 Don't worry [NavigatorKey](https://api.flutter.dev/flutter/material/MaterialApp/navigatorKey.html) is to the rescue. 
 
