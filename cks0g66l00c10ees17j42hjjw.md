@@ -45,7 +45,7 @@ navigatorKey.currentState?.push(
 );
 ```
 
-That's it with just 3 easy steps you can eliminate context from your Navigation.
+That's it with just 3 easy steps you can eliminate context from your Navigation. You can check the full code on  [Github](https://github.com/divyanshub024/flutter_samples).
 
 ***
 
