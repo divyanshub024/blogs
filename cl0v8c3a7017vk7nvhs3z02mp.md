@@ -305,6 +305,8 @@ mason remove <BRICK_NAME>
 
 ### What's next? 
 
+What we have done here is just the tip of the iceberg. With Mason, you can achieve a lot. 
+
 Here is the full working example of this tutorial -> [Mason_Demo](https://github.com/divyanshub024/mason_demo)
 
 I would highly recommend you to check out the [mason repo](https://github.com/felangel/mason) for a more detailed view and the latest changes.
