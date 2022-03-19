@@ -112,7 +112,7 @@ You can see that we have defined a variable `name`. Which will be the name of th
 
 Let's jump to the `__brick__` directory and start writing the cubit template. Let's create 2 directories `lib` and `test`with nested directory `cubit`. 
 
-Now we need to create a directory with a cubit name. For that, we can create a new directory with directory name as `{{{{#snakeCase}}{{name}}{{/snakeCase}}}}`.
+Now we need to create a directory with a cubit name. For that, we can create a new directory with directory name as `{{#snakeCase}}{{name}}{{/snakeCase}}`.
 
 This will be the folder structure of the `__brick__` directory.
 
@@ -120,18 +120,18 @@ This will be the folder structure of the `__brick__` directory.
 --__brick__
   |--lib
   |  |--cubit
-  |  |  |--{{{{#snakeCase}}{{name}}{{/snakeCase}}}} 
+  |  |  |--{{#snakeCase}}{{name}}{{/snakeCase}} 
   |
   |--test
   |  |--cubit
-  |  |  |--{{{{#snakeCase}}{{name}}{{/snakeCase}}}} 
+  |  |  |--{{#snakeCase}}{{name}}{{/snakeCase}} 
   | 
   |....
 ```
 
-In the `--lib -> cubit -> {{{{#snakeCase}}{{name}}{{/snakeCase}}}}` we will create a state class and a cubit class. 
+In the `--lib -> cubit -> {{#snakeCase}}{{name}}{{/snakeCase}}` we will create a state class and a cubit class. 
 
-`{{{{#snakeCase}}{{name}}_state{{/snakeCase}}}}.dart`
+`{{#snakeCase}}{{name}}_state{{/snakeCase}}.dart`
 
 ```
 part of '{{#snakeCase}}{{name}}_cubit{{/snakeCase}}.dart';
@@ -144,7 +144,7 @@ class {{#pascalCase}}{{name}}State{{/pascalCase}} extends Equatable {
 }
 ```
 
-`{{{{#snakeCase}}{{name}}_cubit{{/snakeCase}}}}.dart`
+`{{#snakeCase}}{{name}}_cubit{{/snakeCase}}.dart`
 
 ```
 import 'package:equatable/equatable.dart';
@@ -158,9 +158,9 @@ class {{#pascalCase}}{{name}}Cubit{{/pascalCase}} extends Cubit<{{#pascalCase}}{
 }
 ```
 
-In `--test -> cubit -> {{{{#snakeCase}}{{name}}{{/snakeCase}}}}` we will create a cubit test class.
+In `--test -> cubit -> {{#snakeCase}}{{name}}{{/snakeCase}}` we will create a cubit test class.
 
-`{{{{#snakeCase}}{{name}}_cubit_test{{/snakeCase}}}}.dart`
+`{{#snakeCase}}{{name}}_cubit_test{{/snakeCase}}.dart`
 
 ```
 import 'package:bloc_test/bloc_test.dart';
